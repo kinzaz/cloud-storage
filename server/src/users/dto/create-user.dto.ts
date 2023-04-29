@@ -8,7 +8,7 @@ export class CreateUserDto {
   @ApiProperty({
     default: 'Влад',
   })
-  fullName: string;
+  fullname: string;
   @ApiProperty({
     default: '123456',
   })

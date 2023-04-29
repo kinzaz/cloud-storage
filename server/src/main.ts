@@ -4,7 +4,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: false });
-
+  app.enableCors();
   const config = new DocumentBuilder()
     .setTitle('Cloud storage')
     .setVersion('1.0')
